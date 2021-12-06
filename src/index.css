@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.code-box-demo {
+  text-align: center;
+}
+/* Hier kann man die Farbe vom Header einstellen */
+.ant-layout-header,
+.ant-layout-footer,
+.ant-menu {
+  color: #fff;
+  background-color: #262626;
+}
+[data-theme="dark"] .ant-layout-footer {
+  background: #6aa0c7;
+}
+.ant-layout-footer {
+  line-height: 1.5;
+}
+.ant-layout-sider {
+  color: #fff;
+  line-height: 120px;
+  background: #3ba0e9;
+}
+[data-theme="dark"] .ant-layout-sider {
+  background: #3499ec;
+}
+.ant-layout-content {
+  min-height: 120px;
+  color: #fff;
+  line-height: 120px;
+  background: rgba(16, 142, 233, 1);
+  text-align: center;
+}
+[data-theme="dark"] .ant-layout-content {
+  background: #107bcb;
+}   
+.ant-Input {
+  background: #7dbcea;
+}
+
+.ant-Card {
+  margin: 25px 500px 75px 100px;
+  margin-left: auto;
+  text-align: left;
+  margin-right: auto;
+}
+
+.overviewclass {
+  background-color : #c41d7f;
+}
