@@ -1,12 +1,11 @@
-import { ReactDOM } from 'react';
-import 'antd/dist/antd.css';
-import '../App.css';
-import '../index.css'
-import { Button, Menu, Layout, Space, Input, Row, Col } from 'antd';
-import MyHeader from './MyHeader';
-import { Switch, Route, Router } from 'react-router-dom';
-import Overview from './Overview';
-
+import { ReactDOM } from "react";
+import "antd/dist/antd.css";
+import "../App.css";
+import "../index.css";
+import { Button, Menu, Layout, Space, Input, Row, Col } from "antd";
+import MyHeader from "./MyHeader";
+import { Switch, Route, Router } from "react-router-dom";
+import Overview from "./Overview";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -14,14 +13,24 @@ function MyFooter() {
   return (
     <>
       <Footer>
-            <h1>Impressum</h1>
-        <p>Jan-Leon Bertleff<br/>
-        Am alten G&#252;terbahnhof 11<br/>
-        76646 Bruchsal<br/>
-        Tel: 01771575316<br/>
-        <a href="mailto:jan.leongmx.net@gmail.com">jan.leongmx.net@gmail.com</a>
+        <h1>Impressum</h1>
+        <p>
+          Jan-Leon Bertleff
+          <br />
+          Am alten G&#252;terbahnhof 11
+          <br />
+          76646 Bruchsal
+          <br />
+          Tel: 01771575316
+          <br />
+          <a href="mailto:jan.leongmx.net@gmail.com">
+            jan.leongmx.net@gmail.com
+          </a>
         </p>
-        <meta name="generator" content="Impressum-Generator der Kanzlei Hensche Rechtsanwälte"/>
+        <meta
+          name="generator"
+          content="Impressum-Generator der Kanzlei Hensche Rechtsanwälte"
+        />
         <p>&nbsp;</p>
         <h1>Disclaimer - rechtliche Hinweise</h1>
         <a href="https://google.com">siehe</a>
@@ -32,9 +41,10 @@ function MyFooter() {
 
 export default MyFooter;
 
-//path zu 
+//path zu
 
-{/* <p><strong>Auskunfts- und Widerrufsrecht</strong></p>
+{
+  /* <p><strong>Auskunfts- und Widerrufsrecht</strong></p>
 <p>Sie haben jederzeit das Recht, sich unentgeltlich und unverz&#252;glich &#252;ber die zu Ihrer Person erhobenen Daten 
 zu erkundigen. Ebenfalls k&#246;nnen Sie Ihre Zustimmung zur Verwendung Ihrer angegebenen pers&#246;nlichen Daten mit 
 Wirkung f&#252;r die Zukunft widerrufen. Hierf&#252;r wenden Sie sich bitte an den im Impressum angegebenen 
@@ -73,7 +83,8 @@ Weitergabe der Daten.
 <p>Dieses Impressum wurde mit Hilfe des <a target="_blank" 
 href="http://www.hensche.de/impressum-generator.html">Impressum-Generators</a> von <a target="_blank" 
 href="http://www.hensche.de/Rechtsanwalt_Arbeitsrecht_Stuttgart.html">HENSCHE Rechtsanw&auml;lte, Kanzlei f&uuml;r 
-Arbeitsrecht</a> erstellt.</p> */}
+Arbeitsrecht</a> erstellt.</p> */
+}
 
 //wie bekommen ich es fullscreen?
-//wieso 
+//wieso

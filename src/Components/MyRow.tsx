@@ -20,9 +20,11 @@ export default function MyRow(props: rowType): JSX.Element {
       <Row>
         <Col span={8}></Col>
         <Col span={8}>
-          <Card style={{ width: 200, margin: 15 }}>
-            {props.obj.Inhalt[index]}
-          </Card>
+          <Link to={props.obj.Inhalt[index].toLowerCase()}>
+            <Card style={{ width: 200, margin: 15 }}>
+              {props.obj.Inhalt[index]}
+            </Card>
+          </Link>
         </Col>
         <Col span={8}></Col>
       </Row>
