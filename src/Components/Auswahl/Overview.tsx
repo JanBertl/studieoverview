@@ -15,7 +15,7 @@ function Overview(props: React.HTMLAttributes<HTMLDivElement>) {
     const result = await axios.get(
       "http://localhost:49892/service-course/overview"
     );
-    setScience(result.data.value);
+    setScience(result.data.value[0].name);
     return result;
   }
   getData();
