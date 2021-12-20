@@ -1,10 +1,8 @@
-import { ReactDOM } from "react";
 import "antd/dist/antd.css";
-import "../App.css";
-import "../index.css";
+import "../../App.css";
+import "../../index.css";
 import { Card, Space, Row, Col } from "antd";
-import MyRow from "./MyRow";
-import { Link } from "react-router-dom";
+import MyRow from "../MyRow";
 
 function Overview(props: React.HTMLAttributes<HTMLDivElement>) {
   return (

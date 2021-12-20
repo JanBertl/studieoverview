@@ -1,6 +1,4 @@
-import { ReactDOM } from "react";
-import { Card, Space, Row, Col } from "antd";
-import MyRow from "./MyRow";
+import MyRow from "../../MyRow";
 
 export default function Ingeneieurw() {
   return (

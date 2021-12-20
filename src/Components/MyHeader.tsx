@@ -1,4 +1,3 @@
-import { ReactDOM } from "react";
 import "antd/dist/antd.css";
 import "../App.css";
 import "../index.css";
@@ -12,8 +11,8 @@ function MyHeader() {
     <>
       <Header>
         <Menu mode="horizontal">
-          <Menu.Item>Overview</Menu.Item>
-          <Menu.Item>
+          <Menu.Item key="Overview">Overview</Menu.Item>
+          <Menu.Item key="Ansicht:">
             <Space>
               Ansicht:
               <Link to="/overview">
@@ -26,7 +25,7 @@ function MyHeader() {
               </Button>
             </Space>
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item key="placeholder">
             <Input placeholder="Search" style={{ width: "100%" }} />
           </Menu.Item>
         </Menu>

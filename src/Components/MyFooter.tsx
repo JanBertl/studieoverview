@@ -1,13 +1,9 @@
-import { ReactDOM } from "react";
 import "antd/dist/antd.css";
 import "../App.css";
 import "../index.css";
-import { Button, Menu, Layout, Space, Input, Row, Col } from "antd";
-import MyHeader from "./MyHeader";
-import { Switch, Route, Router } from "react-router-dom";
-import Overview from "./Overview";
+import { Layout } from "antd";
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Footer } = Layout;
 
 function MyFooter() {
   return (
