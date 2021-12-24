@@ -5,41 +5,26 @@ import { Card, Space, Row, Col } from "antd";
 import MyRow from "../MyRow";
 import { useState } from "react";
 import axios from "axios";
+import MyRowCall from "../../MyRowCall";
 
 function Overview(props: React.HTMLAttributes<HTMLDivElement>) {
-  const [science, setScience] = useState<string>("");
+  const [science, setScience] = useState<{ ID: string; name: string }[]>([
+    { ID: "bli", name: "blu" },
+  ]);
   async function getData() {
-    if (science) {
-      return;
-    }
     const result = await axios.get(
       "http://localhost:49892/service-course/overview"
     );
-    setScience(result.data.value[0].name);
+    setScience(result.data.value);
     return result;
   }
   getData();
   return (
     <>
       <Space align="center" direction="vertical">
-        <MyRow
-          obj={{
-            Inhalt: [
-              "Geisteswissenschaften",
-              "Humanwissenschaften",
-              "Ingenieurwissenschaften",
-              "Rechtswissenschaften",
-              "Sozialwissenschaften",
-              "Wirtschaftswissenschaften",
-              "Sonstige",
-              science,
-            ],
-          }}
-        ></MyRow>
+        <MyRowCall list={science} />
       </Space>
     </>
   );
 }
 export default Overview;
-
-// Wissenschaften als Karten untereinander dargestellt, wenn auf eine gedrückt, weiterleitens

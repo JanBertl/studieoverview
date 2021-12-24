@@ -14,7 +14,6 @@ var components: JSX.Element[] = [];
 export default function MyRow(props: rowType): JSX.Element {
   const navigate = useNavigate();
   const location = useLocation();
-  function changeRoute2() {}
   components = props.obj.Inhalt.map((course, index) => (
     <div key={index}>
       <Row>
@@ -23,9 +22,7 @@ export default function MyRow(props: rowType): JSX.Element {
           to={`${location.pathname}/${props.obj.Inhalt[index].toLowerCase()}`}
         >
           <Col span={8}>
-            <Card style={{ width: 200, margin: 15 }}>
-              {props.obj.Inhalt[index]}
-            </Card>
+            <Card style={{ width: 200, margin: 15 }}>{course}</Card>
           </Col>
         </Link>
         <Col span={8}></Col>
