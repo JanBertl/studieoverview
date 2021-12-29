@@ -22,9 +22,11 @@ function Overview(props: React.HTMLAttributes<HTMLDivElement>) {
       ) {
         let x = a.name.toLowerCase();
         let y = b.name.toLowerCase();
-        if (x < y) {
+        // Reihenfolge bleibt gleich, x steht im Alphabet weiter vorne
+        if (x < y && !(x == "sonstige")) {
           return -1;
         }
+        //Sozialwissenschaften, eine Position höher
         if (x > y) {
           return 1;
         }

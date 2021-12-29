@@ -21,7 +21,7 @@
               ],
             // "smartStep": true,
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:49726",
+            "url": "http://localhost:3001",
             "webRoot": "${workspaceFolder}"
         }
     ]
