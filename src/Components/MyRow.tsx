@@ -16,17 +16,18 @@ export default function MyRow(props: rowType): JSX.Element {
   const location = useLocation();
   components = props.obj.Inhalt.map((course, index) => (
     <div key={index}>
-      <Row>
-        <Col span={8}></Col>
-        <Link
-          to={`${location.pathname}/${props.obj.Inhalt[index].toLowerCase()}`}
+      <Link
+        to={`${location.pathname}/${props.obj.Inhalt[index].toLowerCase()}`}
+      >
+        <Card
+          style={{
+            width: 200,
+            margin: 15,
+          }}
         >
-          <Col span={8}>
-            <Card style={{ width: 200, margin: 15 }}>{course}</Card>
-          </Col>
-        </Link>
-        <Col span={8}></Col>
-      </Row>
+          {course}
+        </Card>
+      </Link>
     </div>
   ));
   return (

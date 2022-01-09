@@ -9,7 +9,7 @@ import MyRowCall from "../../MyRowCall";
 
 function Overview(props: React.HTMLAttributes<HTMLDivElement>) {
   const [science, setScience] = useState<{ ID: string; name: string }[]>([
-    { ID: "bli", name: "Loading" },
+    { ID: "0", name: "Loading" },
   ]);
   useEffect(function () {
     async function getData() {
@@ -39,9 +39,7 @@ function Overview(props: React.HTMLAttributes<HTMLDivElement>) {
 
   return (
     <>
-      <Space align="center" direction="vertical">
-        <MyRowCall list={science} />
-      </Space>
+      <MyRowCall list={science} />
     </>
   );
 }

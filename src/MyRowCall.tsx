@@ -12,15 +12,11 @@ export default function MyRowCall(prop: apicall) {
     <>
       {prop.list.map((el, index) => (
         <div key={index}>
-          <Row>
-            <Col span={8}></Col>
-            <Link to={`${location.pathname}/${el.name.toLowerCase()}`}>
-              <Col span={8}>
-                <Card style={{ width: 200, margin: 15 }}>{el.name}</Card>
-              </Col>
-            </Link>
-            <Col span={8}></Col>
-          </Row>
+          <Link to={`${location.pathname}/${el.name.toLowerCase()}`}>
+            <Card style={{ width: 200, margin: 15, textAlign: "center" }}>
+              {el.name}
+            </Card>
+          </Link>
         </div>
       ))}
     </>
