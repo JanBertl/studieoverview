@@ -26,7 +26,12 @@
   }
 }
 
-.OverviewComponent {
-  background-color: blueviolet;
-  
+.BreadcrumbItem {
+  background-color: #108ee9;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.layout {
+  background-color: #108ee9;
 }

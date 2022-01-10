@@ -14,10 +14,10 @@ const { Content } = Layout;
 function App() {
   return (
     <>
-      <Layout>
+      <Layout className="layout">
         <MyHeader />
         <MyBreadCrumb />
-        <Content>
+        <Content className="Contentt">
           <Routes>
             <Route path="/overview/*" element={<Overview />} />
             <Route

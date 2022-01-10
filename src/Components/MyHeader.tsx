@@ -10,7 +10,7 @@ function MyHeader() {
   return (
     <>
       <Header>
-        <Menu mode="horizontal">
+        <Menu mode="horizontal" className="menuitem">
           <Menu.Item key="Overview">Overview</Menu.Item>
           <Menu.Item key="Ansicht:">
             <Space>
@@ -25,8 +25,8 @@ function MyHeader() {
               </Button>
             </Space>
           </Menu.Item>
-          <Menu.Item key="placeholder">
-            <Input placeholder="Search" style={{ width: "100%" }} />
+          <Menu.Item key="Overview" className="menuitem">
+            <Input placeholder="Search" />
           </Menu.Item>
         </Menu>
       </Header>

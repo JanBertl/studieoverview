@@ -1,4 +1,4 @@
-import { Card, Row, Col } from "antd";
+import { Card, Row, Col, Button } from "antd";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,10 @@ export default function MyRowCall(prop: apicall) {
     <>
       {prop.list.map((el, index) => (
         <div key={index}>
-          <Link to={`${location.pathname}/${el.name.toLowerCase()}`}>
+          <Link
+            className="link"
+            to={`${location.pathname}/${el.name.toLowerCase()}`}
+          >
             <Card
               style={{
                 width: 200,
@@ -25,6 +28,7 @@ export default function MyRowCall(prop: apicall) {
             >
               {el.name}
             </Card>
+            {/* <button className="butt">{el.name}</button> */}
           </Link>
         </div>
       ))}
