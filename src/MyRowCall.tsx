@@ -28,7 +28,6 @@ export default function MyRowCall(prop: apicall) {
             >
               {el.name}
             </Card>
-            {/* <button className="butt">{el.name}</button> */}
           </Link>
         </div>
       ))}
