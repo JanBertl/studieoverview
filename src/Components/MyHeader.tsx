@@ -3,15 +3,20 @@ import "../App.css";
 import "../index.css";
 import { Button, Menu, Layout, Space, Input } from "antd";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const { Header, Footer, Sider, Content } = Layout;
 
 function MyHeader() {
+  document.getElementById("searchbar")?.addEventListener("keyup", (content) => {
+    console.log(content);
+  });
+
   return (
     <>
       <Header>
         <Menu mode="horizontal" className="menuitem">
-          <Menu.Item key="Overview">Overview</Menu.Item>
+          <Menu.Item>Overview</Menu.Item>
           <Menu.Item key="Ansicht:">
             <Space>
               Ansicht:
@@ -21,12 +26,12 @@ function MyHeader() {
                 </Button>
               </Link>
               <Button type="primary" size="small">
-                Diagramm
+                <Link to="/diagramm">Diagramm</Link>
               </Button>
             </Space>
           </Menu.Item>
-          <Menu.Item key="Overview" className="menuitem">
-            <Input placeholder="Search" />
+          <Menu.Item className="menuitem">
+            <Input id="searchbar" placeholder="Search" />
           </Menu.Item>
         </Menu>
       </Header>

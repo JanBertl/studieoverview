@@ -5,9 +5,16 @@ import { Layout } from "antd";
 import MyHeader from "./MyHeader";
 import { Routes, Route, Router } from "react-router-dom";
 import Overview from "./Auswahl/Overview";
+import Diagramm from "./Digramm/Diagramm";
 import MyFooter from "./MyFooter";
 import MyBreadCrumb from "./MyBreadCrumb";
 import Ingeneieurw from "./Auswahl/Ingenieurwissenschaften/Ingenieurw";
+import Geisteswissenschaften from "./Auswahl/Geisteswissenschaften/Geisteswissenschaften";
+import Humanwissenschaften from "./Auswahl/Humanwissenschaften/Humanwissenschaften";
+import Rechtswissenschaften from "./Auswahl/Rechtswissenschaften/Rechtswissenschaften";
+import Naturwissenschaften from "./Auswahl/Naturwissenschaften/Naturwissenschaften";
+import Sozialwissenschaften from "./Auswahl/Sozialwissenschaften/Sozialwissenschaften";
+import Wirtschaftswissenschaften from "./Auswahl/Wirtschaftswissenschaften/Wirtschaftswissenschaften";
 
 const { Content } = Layout;
 
@@ -20,37 +27,34 @@ function App() {
         <Content className="Contentt">
           <Routes>
             <Route path="/overview/*" element={<Overview />} />
+            <Route path="/diagramm/*" element={<Diagramm />} />
             <Route
               path="/overview/ingenieurwissenschaften"
               element={<Ingeneieurw />}
             />
             <Route
               path="/overview/geisteswissenschaften"
-              element={<div>placehold</div>}
+              element={<Geisteswissenschaften />}
             />
             <Route
               path="/overview/humanwissenschaften"
-              element={<div>placehold</div>}
+              element={<Humanwissenschaften />}
+            />
+            <Route
+              path="/overview/naturwissenschaften"
+              element={<Naturwissenschaften />}
             />
             <Route
               path="/overview/rechtswissenschaften"
-              element={<div>placehold</div>}
-            />
-            <Route
-              path="/overview/geisteswissenschaften"
-              element={<div>placehold</div>}
-            />
-            <Route
-              path="/overview/geisteswissenschaften"
-              element={<div>placehold</div>}
+              element={<Rechtswissenschaften />}
             />
             <Route
               path="/overview/sozialwissenschaften"
-              element={<div>placehold</div>}
+              element={<Sozialwissenschaften />}
             />
             <Route
               path="/overview/wirtschaftswissenschaften"
-              element={<div>placehold</div>}
+              element={<Wirtschaftswissenschaften />}
             />
             <Route path="/overview/sonstige" element={<div>placehold</div>} />
           </Routes>
